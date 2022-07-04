@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+		<title> Trabalho Final </title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Matheus X. Ilha" />
+		<meta name="description" content="Cookie´s Pet Shop" />
+		<meta name="viewport" content="width=device-width,
+		initial-scalw=1" />
+		<link rel="icon" type="image/x-icon" href="boot.png">
+		
+		<link rel="stylesheet" type="text/css" href="estilo.css" />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+			
+	</head>
+	<body id="corpo">
+		
+		<header id="cabecalho">
+			<h1> Cookie´s Pet Shop </h1>	
+		</header>
+		
+		<nav id="menu">
+			<a href="index.html"> Home </a>
+			<a href="galeria.html"> Galeria </a>
+			<a href="empresa.html"> Quem Somos </a>
+			<a href="formulario.html"> Formulario </a>
+			<a href="contato.html"> Contatos </a>
+			<a href="carrinho.php"> Carrinho </a>
+			
+		</nav>
+		
+		<section id="conteudo">
+			
+			<!-- Galeria -->
+			<div id="demo" class="carousel slide" data-ride="carousel">
+			
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				</ul>
+				
+				 <!-- The slideshow -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<h3 class="titulo"></h3> <br>
+						<img class="imagem-carrossel-um" src="./imagens/cachorro3.jpg" alt="Ração" width="100%" height="100%">
+					</div>
+					<div class="carousel-item">
+						<h3 class="titulo"></h3> <br>
+						<img class="imagem-carrossel-dois" src="./imagens/banhocachorro.jpg" alt="Cachorro no banho" width="100%" height="100%">
+					</div>
+					<div class="carousel-item">
+						<h3 class="titulo"></h3> <br>
+						<img class="imagem-carrossel-tres" src="./imagens/chowchow.jpg" alt="chowchow" width="100%" height="100%">
+					</div>
+				</div>
+				
+				<!-- Left and right controls -->
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+				
+				<h2 id="produto"> Nossos Produtos a Venda </h2>
+				
+			<div id="coluna_A">
+				<h2 class="titulo"> Antipulgas Bravecto </h2>
+				<img src="./imagens/antipulgas.jpg" alt="antipulgas" title="antipulgas" width="50%" height="50%" class="imagem" /> <br>
+				<h3> R$: 239,99 <h3>
+				
+				<form class="ca1" method="post" action="add_carrinho.php">
+					<button class="botao" type="submit" name="produto" value="7">Adicionar ao carrinho</button>
+				</form>
+				
+			</div>
+			
+			<div id="coluna_B">
+				<h2 class="titulo"> Ração de Gato </h2>
+				<img src="./imagens/racaogato.jpg" alt="ração de gato" title="ração de gato" width="50%" height="50%" class="imagem"/> <br>
+				<h3> R$: 24,99 <h3>
+				
+				<form class="ca1" method="post" action="add_carrinho.php">
+					<button class="botao" type="submit" name="produto" value="8">Adicionar ao carrinho</button>
+				</form>
+				
+			</div>
+			
+			<div id="coluna_C">
+				<h2 class="titulo"> Ração de Cachorro </h2>
+				<img src="./imagens/racao.jpg" alt="Racao de Cachorro Golden" title="Racao de Cachorro Golden" width="50%" height="50%" class="imagem"/> <br>
+				<h3> R$: 27,99 <h3>
+				
+				<form class="ca1" method="post" action="add_carrinho.php">
+					<button class="botao" type="submit" name="produto" value="8">Adicionar ao carrinho</button>
+				</form>
+				
+			</div>
+			
+			<div id="coluna_D">
+				<h2 class="titulo"> Shampoo de Cachorro </h2>
+				<img src="./imagens/kit.jpg" alt="Shampoo de Cachorro" title="Shampoo de Cachorro" width="50%" height="50%" class="imagem"/> <br>
+				<h3> R$: 39,99 <h3>
+				
+				<form class="ca1" method="post" action="add_carrinho.php">
+					<button class="botao" type="submit" name="produto" value="8">Adicionar ao carrinho</button>
+				</form>
+				
+			</div>
+			
+			<div id="coluna_E">
+				<h2 class="titulo"> Brinquedo de Cachorro </h2>
+				<img src="./imagens/bola.jpg" alt="Brinquedo de Cachorro" title="Brinquedo de Cachorro" width="50%" height="50%" class="imagem"/> <br>
+				<h3> R$: 19,99 <h3>
+				
+				<form class="ca1" method="post" action="add_carrinho.php">
+					<button class="botao" type="submit" name="produto" value="8">Adicionar ao carrinho</button>
+				</form>
+				
+			</div>
+			
+			<div id="coluna_F">
+				<h2 class="titulo"> Petiscos para Cachorro </h2>
+				<img src="./imagens/petisco.jpg" alt="Petiscos para Cachorro" title="Petiscos para Cachorro" width="50%" height="50%" class="imagem"/> <br>
+				<h3> R$: 21,99 <h3>
+				
+				<form class="ca1" method="post" action="add_carrinho.php">
+					<button class="botao" type="submit" name="produto" value="8">Adicionar ao carrinho</button>
+				</form>
+				
+			</div>			
+				
+			<div id="banho">
+				<iframe width="70%" height="315" src="https://www.youtube.com/embed/GV6fiLMbwUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<br><br><br>
+				<h2> Conheça nossos Serviços de Banho e Tosa </h2> <br>
+				<img src="./imagens/banhocachorro2.jpg" alt="Banho" title="Banho" width="50%" height="auto" />
+			</div>
+			
+			<div id="banhoetosa">
+				<h2 class="titulo2"> Banho e Tosa Classic </h2>
+				<img src="./imagens/banho.png" alt="Banho e tosa" title="Banho Classic" width="50%" height="50%" /> <br>
+				<h3 class="preco"> R$: 99,99 <h3>
+				
+				<form class="ca1" method="post" action="add_carrinho.php">
+					<button class="botao" type="submit" name="produto" value="8">Adicionar ao carrinho</button>
+				</form>
+				
+			</div>
+			
+			<div id="banhoetosa1">
+				<h2 class="titulo2"> Banho e Tosa Premium </h2>
+				<img src="./imagens/premium.jpg" alt="Banho e tosa" title="Banho Premium" width="50%" height="50%" /> <br>
+				<h3 class="preco"> R$: 199,99 <h3>
+				
+				<form class="ca1" method="post" action="add_carrinho.php">
+					<button class="botao" type="submit" name="produto" value="8">Adicionar ao carrinho</button>
+				</form>
+			</div>
+			<br>
+			
+			<button id="ancora" type="button" class="btn btn-info"><a href="#cabecalho"><h3> HOME </h3></a></button>
+			
+		</section>
+		
+		<footer>
+		
+		<h5> Deselvolvido por Matheus Ilha <br> Todos os Direitos Reservados </h5>
+		
+	</footer>
+	
+	</body>
+	
+</html>

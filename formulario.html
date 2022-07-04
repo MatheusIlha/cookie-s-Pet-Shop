@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+		<title> Trabalho Final </title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Matheus X. Ilha" />
+		<meta name="viewport" content="width=device-width,
+		initial-scalw=1" />
+		<link rel="icon" type="image/x-icon" href="boot.png">
+		
+		<link rel="stylesheet" type="text/css" href="estilo.css" />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		
+	</head>
+	<body id="corpo_2">
+		
+		<header id="cabecalho">
+			<h1> Cookie´s Pet Shop </h1>	
+		</header>
+		
+		<nav id="menu">
+			<a href="index.html"> Home </a>
+			<a href="galeria.html"> Galeria </a>
+			<a href="empresa.html"> Quem Somos</a>
+			<a href="formulario.html"> Formulario </a>
+			<a href="contato.html"> Contatos </a>
+			
+		</nav>
+		
+		<section id="conteudo">
+			<!-- Galeria -->
+			<div id="demo" class="carousel slide" data-ride="carousel">
+			
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				</ul>
+				
+				 <!-- The slideshow -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<h3 class="titulo"></h3> <br>
+						<img src="./imagens/cachorro3.jpg" alt="Ração" width="100%" height="100%">
+					</div>
+					<div class="carousel-item">
+						<h3 class="titulo"></h3> <br>
+						<img src="./imagens/banhocachorro.jpg" alt="Cachorro no banho" width="100%" height="100%">
+					</div>
+					<div class="carousel-item">
+						<h3 class="titulo"></h3> <br>
+						<img src="./imagens/chowchow.jpg" alt="chowchow" width="100%" height="100%">
+					</div>
+				</div>
+				
+				<!-- Left and right controls -->
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+			
+			<!-- Formulario -->
+			<BR>
+			<BR>
+			<div id="container">
+		
+			<form method="get" action="#" id="form" class="form">
+				<div class="coluna">
+					<div class="coluna_A">
+						<label for="nome"> Nome: </label>
+					</div>	
+					<div class="coluna_B">
+						<input type="text" id="nome" name="nome" placeholder="Digite seu Nome" required />
+					</div>
+				</div>
+				
+				<div class="coluna">
+					<div class="coluna_A">
+						<label for="endereco"> Endereço: </label>
+					</div>	
+					<div class="coluna_B">
+						<input type="text" id="endereco" name="endereco" placeholder="Digite seu Endereço" required />
+					</div>
+				</div>
+				
+				<div class="coluna">
+					<div class="coluna_A">
+						<label for="telefone">Telefone:</label>
+					</div>	
+					<div class="coluna_B">
+						<input type="text" name="telefone" id="telefone" placeholder="(XX) XXXXX-XXXX" maxlength="15" required />
+					</div>
+				</div>
+				
+				<div class="coluna">
+					<div class="coluna_A">
+						<label for="idade"> Idade: </label>
+					</div>	
+					<div class="coluna_B">
+						<input type="number" id="idade" name="idade" placeholder="Digite sua Idade" required />
+					</div>
+				</div>
+				
+				<div class="coluna">
+					<div class="coluna_A">
+						<label for="email"> Email: </label>
+					</div>	
+					<div class="coluna_B">
+						<input type="email" id="email" onkeyup="mini()" name="email" placeholder="Digite seu Email" required />
+					</div>
+				</div>
+				
+				<div class="coluna">
+					<div class="coluna_A">
+						<label for="datanasc"> Data de Nascimento: </label>
+					</div>	
+					<div class="coluna_B">
+						<input type="date" id="datanasc" name="datanasc" />
+					</div>
+				</div>
+				
+				<div class="coluna">
+					<div class="coluna_A">
+						<label for="cidade"> Seleciona a Cidade: </label>
+					</div>	
+					<div class="coluna_B">
+						<select id="cidade" name="cidade">
+							<option value="poa"> Porto Alegre </option>
+							<option value="vaiamao"> Gravatai </option>
+							<option value="gravatai"> Esteio </option>
+							<option value="gravatai"> Canoas </option>
+							<option value="gravatai"> Caxias </option>
+						</select>	
+					</div>
+				</div>
+				
+				<div class="coluna">
+					<div class="coluna_A">
+						<label for="opiniao"> Deixe a sua Opinião: </label>
+					</div>	
+					<div class="coluna_B">
+						<textarea id="opiniao" name="opiniao" placeholder="Deixe sua Opinião" style="height: 200px"></textarea>
+							
+							
+					</div>
+				</div>
+				
+				<div class="coluna">
+					<div class="coluna_A">
+						<label for="password"> Informe Senha: </label>
+					</div>	
+					<div class="coluna_B">
+						<input type="password" name="senha" maxlength="8" size="8" />
+					</div>
+				</div>
+				
+				<div class="coluna">
+					<div class="coluna_A">
+						<label for="password"> Confirme Senha:</label>
+					</div>	
+					<div class="coluna_B">
+						<input type="password" name="confirma_senha" maxlength="8" size="8" />
+					</div>
+				</div>
+				
+				<div class="coluna">
+					<p><input type="reset" value="LIMPAR" /></p>
+					<p><input type="submit" value="ENVIAR" /></p>
+				</div>
+			</form>
+			
+		</div>		
+				
+		<button id="ancora2" type="button" class="btn btn-info"><a href="#cabecalho"><h3> HOME </h3></a></button>	
+					
+		</section>
+		
+			
+		
+		<footer>
+		
+		<h5> Deselvolvido por Matheus Ilha <br> Todos os Direitos Reservados </h5>
+		
+	</footer>
+	
+		<script src="validador.js"></script>
+	</body>
+	
+</html>
